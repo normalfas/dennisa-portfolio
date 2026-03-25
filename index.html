@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dennisa Lobmel // Visual Storyteller</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: #0a0a0b; 
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-wrapper {
+            max-width: 1100px;
+            width: 100%;
+            background-color: #ffffff; 
+            margin: 40px auto;
+            box-shadow: 0 0 80px rgba(0,0,0,1);
+            border-radius: 30px; 
+            overflow: hidden;
+            position: relative;
+        }
+
+        header.hero-background {
+            position: relative;
+            z-index: 10;
+        }
+
+        /* 🌙 Biography Section with Centered Shining Moon */
+        .about-section {
+            background-color: #ffffff;
+            position: relative;
+            z-index: 10;
+            padding: 100px 60px;
+            line-height: 1.8;
+            overflow: hidden; 
+            text-align: center; /* Centers the text over the moon */
+        }
+
+        /* THE SHINING SILVER CENTERED MOON */
+        .moon-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* PERFECTLY CENTERS THE MOON */
+            width: 450px;
+            height: 450px;
+            
+            /* Shining Silver Gradient */
+            background: radial-gradient(circle, 
+                rgba(216, 216, 216, 0.4) 0%, 
+                rgba(192, 192, 192, 0.2) 40%, 
+                rgba(255, 255, 255, 0) 70%
+            );
+            
+            border-radius: 50%;
+            /* Shining silver glow effect */
+            box-shadow: 0 0 60px rgba(192, 192, 192, 0.3);
+            
+            pointer-events: none;
+            z-index: 1; 
+        }
+
+        .content-box {
+            position: relative;
+            z-index: 5; /* Ensures text is readable over the moon */
+        }
+
+        .gallery-container {
+            position: relative;
+            background: linear-gradient(135deg, #0d0d0f 0%, #1a1a1d 50%, #0d0d0f 100%);
+            padding: 100px 0;
+            z-index: 15;
+        }
+
+        .photo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 0 40px;
+        }
+
+        .grid-item {
+            width: calc(33.333% - 25px);
+            min-width: 280px;
+            height: 420px;
+            overflow: hidden;
+            border-radius: 20px; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        footer {
+            background-color: #0d0d0f;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .social-links a { color: #ffffff !important; margin: 0 20px; text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .main-wrapper { margin: 0; border-radius: 0; }
+            .grid-item { width: 95%; height: 450px; }
+            .moon-bg { width: 300px; height: 300px; } /* Smaller moon for mobile */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <header class="hero-background">
+            <h1 class="fade-up">Dennisa Angel Lobmel</h1>
+        </header>
+
+        <section class="about-section">
+            <div class="moon-bg"></div> <div class="content-box">
+                <h2 class="fade-up">The Story</h2>
+                <div class="fade-up">
+                    <p>Dennisa Angel Lobmel, lovingly known by her nickname Nevaeh, was born on September 24, 2008. As of now, she is 17 years old, a vibrant stage of life filled with growth, dreams, and self-discovery.</p>
+                    <p>From a young age, Dennisa has shown a unique blend of charm, strength, and kindness that naturally draws people toward her. She is known for her warm personality and the way she carries herself with quiet confidence. Whether among friends or family, she brings a sense of comfort and positivity that makes others feel valued and understood.</p>
+                    <p>Nevaeh is not just defined by her presence, but also by her potential. She represents a generation full of ambition and creativity, with the ability to shape her future in meaningful ways. Her journey is still unfolding, but it is clear that she has the heart and determination to achieve great things.</p>
+                    <p>Beyond everything, what truly makes Dennisa special is her ability to inspire happiness in others. She is someone who leaves a lasting impression—not just because of who she is, but because of how she makes people feel.</p>
+                    <p>Her story is still being written, but it already reflects beauty, resilience, and a promise of an even brighter future ahead.</p>
+                </div>
+                <p class="signature fade-up">Dennisa Lobmel</p>
+            </div>
+        </section>
+
+        <div class="gallery-container">
+            <section class="photo-grid">
+                <div class="grid-item"><img src="photo1 . jpg.jpg" alt="Work 1"></div>
+                <div class="grid-item"><img src="photo2 . jpg.jpg" alt="Work 2"></div>
+                <div class="grid-item"><img src="photo3 . jpg.jpg" alt="Work 3"></div>
+                <div class="grid-item"><img src="photo4 . jpg.jpg" alt="Work 4"></div>
+                <div class="grid-item"><img src="photo5 . jpg.jpg" alt="Work 5"></div>
+                <div class="grid-item"><img src="photo6 . jpg.jpg" alt="Work 6"></div>
+                <div class="grid-item"><img src="photo7 . jpg.jpg" alt="Work 7"></div>
+                <div class="grid-item"><img src="photo8 . jpg.jpg" alt="Work 8"></div>
+                <div class="grid-item"><img src="photo9 . jpg.jpg" alt="Work 9"></div>
+                <div class="grid-item"><img src="photo10 . jpg.jpg" alt="Work 10"></div>
+                <div class="grid-item"><img src="photo11 . jpg.jpg" alt="Work 11"></div>
+                <div class="grid-item"><img src="photo12 . jpg.jpg" alt="Work 12"></div>
+                <div class="grid-item"><img src="photo13 . jpg.jpg" alt="Work 13"></div>
+                <div class="grid-item"><img src="photo14 . jpg.jpg" alt="Work 14"></div>
+                <div class="grid-item"><img src="photo15 . jpg.jpg" alt="Work 15"></div>
+                <div class="grid-item"><img src="photo16 . jpg.jpg" alt="Work 16"></div>
+                <div class="grid-item"><img src="photo17 . jpg.jpg" alt="Work 17"></div>
+                <div class="grid-item"><img src="photo18 . jpg.jpg" alt="Work 18"></div>
+                <div class="grid-item"><img src="photo19 . jpg.jpg" alt="Work 19"></div>
+                <div class="grid-item"><img src="photo20 . jpg.jpg" alt="Work 20"></div>
+                <div class="grid-item"><img src="photo21 . jpg.jpg" alt="Work 21"></div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="social-links">
+                <a href="https://www.facebook.com/ang.el.876852" target="_blank">
+                    <i class="fab fa-facebook-f"></i> Dennisa Angel Lobmel
+                </a>
+                <a href="https://www.tiktok.com/@dennisa784?is_from_webapp=1&sender_device=pc" target="_blank">
+                    <i class="fab fa-tiktok"></i> Nisa
+                </a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
